@@ -150,7 +150,7 @@ Creator: https://github.com/keithwongg
 def main():
     # key = open('apikey.txt', 'r')
     # updater = Updater(key.read(), use_context=True)
-    updater = Updater(os.environ["KEY"], use_contex=True)
+    updater = Updater(os.environ["KEY"], use_context=True)
 
     # Dispatcher to register handlers
     dp = updater.dispatcher
