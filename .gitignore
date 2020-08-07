@@ -1,3 +1,8 @@
+## myfiles
+apikey.txt
+spamm_data.json
+users_chatid.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
