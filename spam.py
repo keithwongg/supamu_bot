@@ -1,4 +1,4 @@
-import logging
+import logging, os
 import json
 import telegram
 from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove, ForceReply, Bot)
@@ -148,8 +148,9 @@ Creator: https://github.com/keithwongg
     return ConversationHandler.END
 
 def main():
-    key = open('apikey.txt', 'r')
-    updater = Updater(key.read(), use_context=True)
+    # key = open('apikey.txt', 'r')
+    # updater = Updater(key.read(), use_context=True)
+    updater = Updater(os.environ["KEY"], use_contex=True)
 
     # Dispatcher to register handlers
     dp = updater.dispatcher
